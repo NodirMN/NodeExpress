@@ -1,0 +1,27 @@
+<a href="/persons/add">Yangi xodim</a>
+{{#if persons.length}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Ism-familiya</th>
+      <th scope="col">Yoshi</th>
+      <th scope="col">Jinsi</th>
+      <th scope="col">Bo'lim</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each persons}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{name}}</td>
+      <td>{{age}} yosh</td>
+      <td>{{gender}}</td>
+      <td>{{depart}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{else}}
+<h2>Xodimlar ro'yhati mavjud emas</h2>
+{{/if}}

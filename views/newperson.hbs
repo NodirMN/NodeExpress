@@ -1,0 +1,23 @@
+<h1>Yangi xodim qo'shish</h1>
+<form action="/persons/" method="post">
+        <input type="hidden" name="_csrf" value="{{csrf}}">
+    <label for="name" class="form-label">Ism-familiyasi</label>
+    <input type="text" class="form-control mb-3" id="name" placeholder="Kamolov Aziz" name="name" required>
+    <label for="name" class="form-label">Yoshi</label>
+    <input type="number" class="form-control mb-3" id="name" placeholder="22" name="age" required>
+    <div class="form-check mb-1 ">
+        <input class="form-check-input" type="radio" name="gender" id="men" value="Erkak" checked>
+        <label class="form-check-label" for="men">Erkak</label>
+    </div>
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="radio" name="gender" id="women" value="Ayol">
+        <label class="form-check-label" for="women">Ayol</label>
+    </div>
+    <select name="depart" class="form-select mb-3" aria-label="Bo'limni tanlang">
+        <option selected>Bo'limni tanlang</option>
+        <option value="Veb ilovalar">Veb ilovalar</option>
+        <option value="Mobil dasturlash">Mobil dasturlash</option>
+        <option value="Boshqaruv bo'limi">Boshqaruv bo'limi</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Jo'natish</button>
+</form>

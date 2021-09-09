@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<a href="/tasks/new">Yangi topshiriq</a>
+
+<table class="table">
+<tr>
+    <th>Tosphiriq sarlavhasi</th>
+    <th>Holati</th>
+    <th>Ma'sul hodim</th>
+    <th>Xodim email</th>
+    <th></th>
+</tr>
+{{#each tasks}}
+<tr>
+    <td>{{title}}</td>
+    <td>{{status}}</td>
+    <td>{{userId.name}}</td>
+    <td>{{userId.email}}</td>
+    <td></td>
+</tr>
+{{/each}}
+</table>
